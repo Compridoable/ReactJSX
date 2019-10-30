@@ -45,7 +45,7 @@ var element2 =
         Lista filmów
     </h1>
     <ul>
-        {moviesElement}
+        {moviesElements}
     </ul>
 </div>
 
