@@ -1,23 +1,3 @@
-var element0 = React.createElement('div',{},'Hello world!');
-ReactDOM.render(element0, document.getElementById('app0'));
-
-
-var element1 = React.createElement('div',{},
-    React.createElement('h1',{},'Lista filmów'),
-    React.createElement('ul',{},
-        React.createElement('li',{},
-            React.createElement('h1',{},'Fallout'),
-            React.createElement('p',{},'film o agencie chroniącym świat')
-        ),
-        React.createElement('li',{},
-            React.createElement('h1',{},'Król Lew'),
-            React.createElement('p',{},'film o lwie')
-        )
-    )
-);
-ReactDOM.render(element1, document.getElementById('app1'));
-
-
 var movies = [
     {
         id: 0,
@@ -44,6 +24,7 @@ var movies = [
         picture: "https://ssl-gfx.filmweb.pl/po/68/31/796831/7819952.6.jpg"
     }
 ];
+
 var moviesElements = movies.map(function(movie){
     return(
         <li key={'movie.idReact'}>
@@ -57,8 +38,16 @@ var moviesElements = movies.map(function(movie){
         </li>
     );
 });
-var element2 = React.createElement('div',{},
-    React.createElement('h1',{},'Lista filmów'),
-    React.createElement('ul',{},moviesElements)
-);
-ReactDOM.render(element2, document.getElementById('app2'));
+var element2 = 
+
+<div>
+    <h1>
+        Lista filmów
+    </h1>
+    <ul>
+        {moviesElement}
+    </ul>
+</div>
+
+
+ReactDOM.render(element2, document.getElementById('app0'));
